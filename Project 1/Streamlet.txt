@@ -1,5 +1,0 @@
-run as administrator:
-C:\Program Files\WinPython\WPy64-3770\WinPython Command Prompt.exe
-
-then type the below:
-streamlit run "C:\Users\bh04\Desktop\Streamlit\Project 1\Main.py"
