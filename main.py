@@ -65,7 +65,7 @@ if navigate == 'Home Page':
     
     
     # adding the home page image
-    img=Image.open('C:/Users/Basman/Desktop/Heart Failure Prediction Dataset/image.jpg')
+    img=Image.open('image.jpg')
     st.image(img)
 
     
