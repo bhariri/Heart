@@ -1,0 +1,14 @@
+matplotlib
+seaborn
+streamlit
+pandas
+numpy
+plotly.graph_objects
+Image
+ExtraTreesClassifier
+train_test_split
+LogisticRegression
+accuracy_score
+classification_report
+confusion_matrix
+StandardScaler
