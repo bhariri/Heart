@@ -34,13 +34,13 @@ st.set_page_config(
 navigate = st.sidebar.radio('Navigation Side Bar',
                  ('Home Page', 'Summary Statistics', 'Pre ML Analysis',
                   'Model Evaluation','User App'))
-imgside=Image.open('C:/Users/Basman/Desktop/Heart Failure Prediction Dataset/sidebar.jpg')
+imgside=Image.open('sidebar.jpg')
 st.sidebar.image(imgside, use_column_width=True)
 
 # Updating the Datset if needed
 uploaded_file = st.file_uploader("Upload updated dataset")
 if uploaded_file is None:
-    df = pd.read_csv("C:/Users/Basman/Desktop/Heart Failure Prediction Dataset/heart.csv")
+    df = pd.read_csv("heart.csv")
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     if st.button('Show a sample of the data'):
