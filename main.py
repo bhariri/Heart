@@ -5,7 +5,7 @@ Created on Sat Jul  2 12:39:04 2022
 @author: Basman Hariri
 """ 
 
-import os
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
@@ -20,13 +20,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import StandardScaler
-def get_all_files(folder):
-    file_list = []
-    if os.path.exists(folder):
-        for root, dirs, files in os.walk(folder):
-            for file in files:
-                file_list.append(os.path.join(root,file))
-    return file_list
+
+    
 st.set_page_config(
     page_title="Heart Failure Prediction",
     page_icon="heart",
