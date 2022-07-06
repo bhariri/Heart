@@ -5,7 +5,7 @@ Created on Sat Jul  2 12:39:04 2022
 @author: Basman Hariri
 """ 
 
-
+impot os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
@@ -21,6 +21,8 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import StandardScaler
 
+path = os.path.dirname(__file__)
+
     
 st.set_page_config(
     page_title="Heart Failure Prediction",
@@ -35,7 +37,7 @@ st.set_page_config(
 navigate = st.sidebar.radio('Navigation Side Bar',
                  ('Home Page', 'Summary Statistics', 'Pre ML Analysis',
                   'Model Evaluation','User App'))
-imgside=Image.open('sidebar.jpg')
+imgside=Image.open(path+'sidebar.jpg')
 st.sidebar.image(imgside, use_column_width=True)
 
 # Updating the Datset if needed
