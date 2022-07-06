@@ -34,7 +34,7 @@ st.set_page_config(
 navigate = st.sidebar.radio('Navigation Side Bar',
                  ('Home Page', 'Summary Statistics', 'Pre ML Analysis',
                   'Model Evaluation','User App'))
-imgside=Image.open('sidebar.jpg')
+imgside=Image.open("sidebar.jpg")
 st.sidebar.image(imgside, use_column_width=True)
 
 # Updating the Datset if needed
